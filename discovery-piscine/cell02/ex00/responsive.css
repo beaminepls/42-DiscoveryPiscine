@@ -1,0 +1,12 @@
+table {
+    width: 100%;
+    height: 100%;
+}
+td {
+    background-color: pink;
+    border: 1px solid black
+}
+td:nth-child(even) {
+background-color: purple;
+border: 1px solid black;
+}
