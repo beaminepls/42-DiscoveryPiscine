@@ -1,17 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Calculator</title>
-
 <script>
 	function calcuMath() {
     var z;
     var x = parseInt(document.getElementById("firstNum").value, 10);
 		console.log(x);
 	var y = parseInt(document.getElementById("secNum").value, 10);
+	console.log(y);
     var sel = document.getElementById("fallDown");
     var selection = sel.options[sel.selectedIndex].value;
     var more = document.getElementById("add");
@@ -45,6 +42,11 @@
       return false;
     }
 	}
+	if ((selection == 'divi' || selection == 'modul') && y == 0)
+	{
+		alert("It’s over 9000!");
+		return;
+	}
 
 	if (x >=0 && y >= 0)
 	{
@@ -54,11 +56,6 @@
 		
 	} else {
 		alert ("Error :(");
-	}
-
-	if (divi && modul == 0)
-	{
-		alert("It’s over 9000!");
 	}
 }
 
@@ -72,7 +69,7 @@ function saludo(){
 
 <body>
 	<div class="container">
-    <p>If you want to make a calculation, enter the numbers and choose the corresponding option:</p>
+    <p>calcalatur</p>
     <input type="text" id="firstNum" pattern="[0-9]+"/>
     <select id="fallDown">
     	<option>Choose</option>
