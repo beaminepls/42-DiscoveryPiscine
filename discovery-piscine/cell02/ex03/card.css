@@ -1,0 +1,25 @@
+body {
+    margin: 0px;
+    background: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+.card {
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(223, 223, 223);
+    box-shadow: 0px 0px 10px black;
+    font-size: 36px;
+}
+
+.pfp {
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+}

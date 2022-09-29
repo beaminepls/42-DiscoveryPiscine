@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="backgroound.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <button type="button" onclick="change_colour()">weewooweewoo</button>
+        <script>
+        function change_colour() {
+            var x = Math.floor(Math.random() * 256);
+            var y = Math.floor(Math.random() * 256);
+            var z = Math.floor(Math.random() * 256);
+            var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+            document.body.style.background = bgColor;
+        }
+        </script>
+    </body>
+</html>
